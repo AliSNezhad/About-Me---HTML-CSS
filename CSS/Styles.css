@@ -1,0 +1,138 @@
+@import "./normalize.css";
+:root {
+    background: #242424;
+    --color-primary: #ffffff;
+    --color-secondary: #919697;
+    --color-alert: #ff3400;
+    --color-headings: #ffe600;
+    --color-body-blue: #009dff;
+    --color-body-lighter: #ffffff;
+    --color-body-green: #00ff00;
+    --color-body-darker: #616161;
+    --color-border: #ffffff;
+    --border-radius: 30px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+/* Typography */
+
+::selection {
+    background: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+
+/* 1rem == 10px */
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: Fira Code, Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: var(--color-body-lighter);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+h1 {
+    color: var(--color-headings);
+    font-size: 6rem;
+}
+
+h2 {
+    color: var(--color-body-green);
+    font-size: 4rem;
+}
+
+h3 {
+    color: var(--color-body-blue);
+    font-size: 2.8rem;
+}
+
+p {
+    color: var(--color-body-lighter);
+    margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 1.8rem;
+    }
+    h1 {
+        font-size: 8rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    h3 {
+        font-size: 2.4rem;
+    }
+}
+
+
+/* Navigation bar*/
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav {
+    color: var(--color-body-lighter);
+    font-size: 1.5rem;
+    background: #000000;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav__img {
+    height: 5rem;
+    width: auto;
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+.navBrand {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.nav>a {
+    text-decoration: none;
+    color: var(--color-body-lighter);
+    cursor: pointer;
+    transition: color 0.3s, font-weight 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+.nav>a:hover {
+    color: #929292;
+    font-weight: bold;
+}
