@@ -191,12 +191,36 @@ header {
 }
 
 .companyLogo {
-    height: 4rem;
+    height: 7rem;
     width: auto;
     margin: 0rem 1rem 0rem 1rem;
     margin-left: 20px;
 }
 
 .companyName {
+    flex-grow: 1;
+}
+
+
+/* Education Section Styling */
+
+#Educations {
+    margin: 5rem 3rem 5rem 3rem;
+}
+
+.universityGroup {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.universityLogo {
+    height: 7rem;
+    width: auto;
+    margin: 0rem 1rem 0rem 1rem;
+    margin-left: 20px;
+}
+
+.universityName {
     flex-grow: 1;
 }
