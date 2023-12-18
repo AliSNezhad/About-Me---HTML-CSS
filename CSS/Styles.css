@@ -55,7 +55,7 @@ h5 {
 }
 
 h1 {
-    color: var(--color-body-yellow);
+    color: var(--color-body-blue);
     font-size: 6rem;
 }
 
@@ -74,10 +74,19 @@ p {
     margin-top: 0;
 }
 
-hr {
+.longDivider {
     align-self: center;
     width: 80%;
-    color: var(--color-border);
+    border-color: var(--color-body-green);
+    background-color: var(--color-body-yellow);
+    border-style: dashed;
+}
+
+.shortDivider {
+    align-self: center;
+    width: 60%;
+    border-color: var(--color-body-blue);
+    background-color: var(--color-body-green);
     border-style: dashed;
 }
 
@@ -137,7 +146,7 @@ header {
 }
 
 .myTitles {
-    color: var(--color-body-yellow);
+    color: var(--color-body-lighter);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 6rem);
@@ -159,11 +168,35 @@ header {
 }
 
 .mySkills {
-    color: var(--color-body-yellow);
+    color: var(--color-body-lighter);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(8, 6rem);
     justify-items: left;
     max-width: 1600px;
     margin: 1rem 5rem 1rem 5rem;
+}
+
+
+/* Work Experiences Section Styling */
+
+#WorkExperiences {
+    margin: 5rem 3rem 5rem 3rem;
+}
+
+.companyGroup {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.companyLogo {
+    height: 4rem;
+    width: auto;
+    margin: 0rem 1rem 0rem 1rem;
+    margin-left: 20px;
+}
+
+.companyName {
+    flex-grow: 1;
 }
